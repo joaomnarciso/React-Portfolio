@@ -1,13 +1,108 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+.fas {
+  padding-right: 0.5em;
+}
+
+a .fab {
+  color: #33c69f;
+}
+
+body {
+  background-color: #0a1b28;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: left;
+}
+
+ul.reset li {
+  border: 0px;
+  background: none;
+}
+
+.bg-dark {
+  background-color: #192a36 !important;
+}
+
+.btn-custom {
+  border: 1px solid #33c69f;
+  color: #33c69f;
+}
+.btn-custom:hover {
+  background: #33c69f;
+  color: #0a1b28;
+}
+
+.border-default {
+  border: 1px solid #192a36;
+}
+
+.content-quote {
+  background: #ff7a8a;
+}
+.content-quote p {
+  color: #000000;
+}
+
+.content-frame {
+  height: 300px;
+  padding: 3em;
+}
+.content-frame.hover {
+  border-bottom: 4px solid #33c69f;
+}
+.content-frame.hover h4 {
+  color: #33c69f;
+}
+
+.card-custom {
+  border: 1px solid #192a36;
+}
+.card-custom:hover {
+  border: 1px solid #33c69f;
+}
+.card-custom:hover img {
+  height: 30px;
+}
+.card-custom .card-body {
+  background: #192a36;
+}
+.card-custom .card-body h5,
+.card-custom .card-body h6,
+.card-custom .card-body p {
+  color: #33c69f;
+}
+.card-custom .card-body span.badge {
+  background: #0a1b28;
+  border: 1px solid #192a36;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+.card-custom .card-body span.badge:hover {
+  background: #192a36;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,111 @@
+@import "sass/variables";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.fas {
+  padding-right: 0.5em;
+}
+
+a .fab {
+  color: $clr-secondary;
+}
+body {
+  background-color: $bkg-primary;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li {
+  color: $clr-primary;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: left;
+}
+ul.reset li {
+  border: 0px;
+  background: none;
+}
+
+// C
+.bg-dark {
+  background-color: $bkg-tertiary !important;
+}
+.btn-custom {
+  border: 1px solid $clr-secondary;
+  color: $clr-secondary;
+
+  &:hover {
+    background: $clr-secondary;
+    color: $clr-tertiary;
+  }
+}
+.border-default {
+  border: 1px solid $brd-primary;
+}
+
+.content-quote {
+  background: $bkg-light;
+  p {
+    color: #000000;
+  }
+}
+
+.content-frame {
+  height: 300px;
+  padding: 3em;
+
+  &.hover {
+    border-bottom: 4px solid $clr-secondary;
+
+    h4 {
+      color: $clr-secondary;
+    }
+  }
+}
+//Cards
+.card-custom {
+  border: 1px solid $brd-primary;
+
+  &:hover {
+    border: 1px solid $brd-secondary;
+    img {
+      height: 30px;
+    }
+  }
+
+  .card-body {
+    background: $bkg-tertiary;
+
+    h5,
+    h6,
+    p {
+      color: $clr-secondary;
+    }
+
+    span.badge {
+      background: $bkg-primary;
+      border: 1px solid $brd-primary;
+      font-size: 0.8em;
+      line-height: 1.2em;
+
+      &:hover {
+        background: $bkg-tertiary;
+        color: $clr-primary;
+      }
+    }
+  }
+}
