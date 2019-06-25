@@ -30,16 +30,16 @@ export default class About extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <Education data={this.state.education} />
-            </div>
-            <div className="col-md-6">
               <Technologies data={this.state.technologies} />
             </div>
-            <div className="col-md-12">
+            <div className="col-md-6">
               <Experience data={this.state.experience} />
             </div>
-            <div className="col-md-12">
+            <div className="col-md-6">
               <Work data={this.state.work} />
+            </div>
+            <div className="col-md-6">
+              <Education data={this.state.education} />
             </div>
           </div>
         </div>

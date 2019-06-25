@@ -12,3 +12,9 @@
     background: $bkg-contrast;
   }
 }
+
+/* Education */
+.card.card-education {
+  background: $bkg-tertiary !important;
+  border-bottom: 4px solid $brd-secondary;
+}
