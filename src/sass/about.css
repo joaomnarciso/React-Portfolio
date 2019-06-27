@@ -1,0 +1,25 @@
+.badge-primary {
+  margin: 5px;
+  background: #33c69f;
+  color: #0a1b28;
+  font-size: 0.8em;
+}
+
+.experience .progress-bar {
+  background: #33c69f;
+}
+
+/* Education */
+h2 i.fas {
+  font-size: 1rem;
+}
+
+.card {
+  background: #192a36 !important;
+  border-bottom: 4px solid #33c69f;
+}
+.card h4 {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=about.css.map */

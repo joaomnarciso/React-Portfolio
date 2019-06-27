@@ -16,7 +16,7 @@ export default ({ data }) => (
             <i className="fas fa-at" />
             {data.email}
           </li>
-          {console.log(data.location)}
+          {console.log(data.location.city)}
           <li className="list-group-item location px-0">
             <i className="fas fa-map-marker-alt" />- Germany
           </li>
