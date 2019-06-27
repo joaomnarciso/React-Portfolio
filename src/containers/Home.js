@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Social from "../components/Social";
+import Introduction from "../components/Introduction";
 import Carousel from "../components/Carousel";
 import Particles from "react-particles-js";
 
@@ -7,8 +7,8 @@ import "../sass/home.css";
 
 export default class Home extends Component {
   state = {
+    personal: [],
     testimonials: [],
-    loading: true,
     social: []
   };
 
@@ -17,9 +17,9 @@ export default class Home extends Component {
       .then(res => res.json())
       .then(data => {
         this.setState({
+          personal: data.basics,
           testimonials: data.testimonials,
-          loading: false,
-          social: data.social
+          social: data.basics.profiles
         });
       })
       .catch(err => console.log("Something went wrong:", err));
@@ -43,42 +43,7 @@ export default class Home extends Component {
             }
           }}
         />
-        <div className="container my-4">
-          <div className="row py-4">
-            <div className="col-md">
-              <h1 className="text-left">João M. Narciso</h1>
-              <h3 className="text-left">Full Stack Developer</h3>
-              <ul className="list-group text-left my-4 reset">
-                <li className="list-group-item phone px-0">
-                  <i className="fas fa-phone" />
-                  +49 174 7783152
-                </li>
-                <li className="list-group-item email px-0">
-                  <i className="fas fa-at" />
-                  joaomnarciso@gmail.com
-                </li>
-                <li className="list-group-item location px-0">
-                  <i className="fas fa-map-marker-alt" />
-                  Düsseldorf - Germany
-                </li>
-              </ul>
-
-              <button type="button" className="btn btn-outline-info btn-custom">
-                Download my resume
-              </button>
-            </div>
-            <div className="col-sm text-right">
-              <img
-                src="/images/me.jpg"
-                alt="profile"
-                className="rounded-circle text-center"
-                height="300"
-                style={{ objectFit: "cover" }}
-              />
-              <Social data={this.state.social} />
-            </div>
-          </div>
-        </div>
+        <Introduction data={this.state.personal} />
         <div className="container">
           <Carousel data={this.state.testimonials} />
         </div>

@@ -14,7 +14,19 @@
 }
 
 /* Education */
-.card.card-education {
+h2 i.fas {
+  font-size: 1rem;
+}
+.card {
   background: $bkg-tertiary !important;
   border-bottom: 4px solid $brd-secondary;
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  &.card-education {
+  }
+  &.card-job {
+  }
 }

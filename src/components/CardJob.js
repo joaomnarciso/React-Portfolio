@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CardJob({ data }) {
   return (
-    <div className="card card-education mb-4">
+    <div className="card card-job mb-4">
       <div className="card-body">
         <h4>
           {data.startDate} ~ {data.endDate}
