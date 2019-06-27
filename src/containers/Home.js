@@ -1,15 +1,15 @@
 import React, { Component } from "react";
+import Particles from "react-particles-js";
+
 import Introduction from "../components/Introduction";
 import Carousel from "../components/Carousel";
-import Particles from "react-particles-js";
 
 import "../sass/home.css";
 
 export default class Home extends Component {
   state = {
-    personal: [],
-    testimonials: [],
-    social: []
+    personal: { location: {}, profiles: [] },
+    testimonials: []
   };
 
   componentDidMount() {
@@ -18,8 +18,7 @@ export default class Home extends Component {
       .then(data => {
         this.setState({
           personal: data.basics,
-          testimonials: data.testimonials,
-          social: data.basics.profiles
+          testimonials: data.testimonials
         });
       })
       .catch(err => console.log("Something went wrong:", err));
@@ -44,9 +43,8 @@ export default class Home extends Component {
           }}
         />
         <Introduction data={this.state.personal} />
-        <div className="container">
-          <Carousel data={this.state.testimonials} />
-        </div>
+
+        <Carousel data={this.state.testimonials} />
         <div className="container my-4">
           <div className="row">
             <div className="col-md">

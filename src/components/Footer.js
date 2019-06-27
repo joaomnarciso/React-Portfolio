@@ -1,12 +1,10 @@
 import React from "react";
+import Social from "./Social";
 
-const Footer = () => (
+const currentYear = new Date();
+
+export default ({ data }) => (
   <footer>
-    <p>João M. Narciso</p>
-    <nav>
-      <li>Link</li>
-    </nav>
+    <p> João M. Narciso © {currentYear.getFullYear()} </p>
   </footer>
 );
-
-export default Footer;

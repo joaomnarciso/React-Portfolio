@@ -13,6 +13,6 @@ export default ({ data }) => (
           <i className={`fab fa-${item.network.toLowerCase()}`} />
         </a>
       </li>
-    ))}{" "}
+    ))}
   </ul>
 );

@@ -46,9 +46,18 @@ ul.reset li {
   background-color: #192a36 !important;
 }
 
+.bg-contrast {
+  background-color: #ffbd39;
+}
+
+.color-dark {
+  color: #0a1b28;
+}
+
 .btn-custom {
   border: 1px solid #33c69f;
   color: #33c69f;
+  background: #0a1b28;
 }
 .btn-custom:hover {
   background: #33c69f;

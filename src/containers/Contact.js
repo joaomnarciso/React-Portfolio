@@ -1,10 +1,69 @@
 import React from "react";
+import Particles from "react-particles-js";
+
 import ContactForm from "../components/ContactForm";
 
 export default function Contact() {
   return (
-    <div>
+    <section>
+      <Particles
+        className="particles"
+        params={{
+          particles: {
+            number: {
+              value: 35,
+              density: {
+                enable: true,
+                value_area: 800
+              }
+            },
+            line_linked: {
+              enable: false
+            },
+            move: {
+              speed: 4,
+              out_mode: "out",
+              radius: 10
+            },
+            shape: {
+              type: ["images"],
+              images: [
+                {
+                  src: "/svg/code-solid.svg",
+                  height: 23,
+                  width: 23
+                },
+                {
+                  src: "/svg/laptop-code-solid.svg",
+                  height: 20,
+                  width: 20
+                },
+                {
+                  src: "/svg/project-diagram-solid.svg",
+                  height: 20,
+                  width: 20
+                }
+              ]
+            },
+            color: {
+              value: "#CCC"
+            },
+            size: {
+              value: 30,
+              random: false,
+              anim: {
+                enable: true,
+                speed: 4,
+                size_min: 10,
+                sync: false
+              }
+            }
+          },
+          retina_detect: false
+        }}
+      />
       <h1>This is the contact</h1>
+
       <ContactForm />
 
       <iframe
@@ -15,6 +74,6 @@ export default function Contact() {
         style={{ border: 0 }}
         allowfullscreen
       />
-    </div>
+    </section>
   );
 }

@@ -16,9 +16,10 @@ export default ({ data }) => (
             <i className="fas fa-at" />
             {data.email}
           </li>
-          {console.log(data.location.city)}
+          {console.log(data.profiles)}
           <li className="list-group-item location px-0">
-            <i className="fas fa-map-marker-alt" />- Germany
+            <i className="fas fa-map-marker-alt" />
+            {data.location.city}- {data.location.countryCode}
           </li>
         </ul>
 
@@ -34,7 +35,7 @@ export default ({ data }) => (
           height="300"
           style={{ objectFit: "cover" }}
         />
-        {/*<Social data={data.profiles} />*/}
+        <Social data={data.profiles} />
       </div>
     </div>
   </div>

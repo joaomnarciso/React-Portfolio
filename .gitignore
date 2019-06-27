@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 /public/data
-/public/images
+#/public/images
 .pnp.js
 /.vscode
 
@@ -22,7 +22,7 @@
 .env.production.local
 
 *.css.map
-src/sass/*.css
+#src/sass/*.css
 
 
 npm-debug.log*

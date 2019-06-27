@@ -44,9 +44,17 @@ ul.reset li {
 .bg-dark {
   background-color: $bkg-tertiary !important;
 }
+.bg-contrast {
+  background-color: $bkg-contrast;
+}
+
+.color-dark {
+  color: $clr-tertiary;
+}
 .btn-custom {
   border: 1px solid $clr-secondary;
   color: $clr-secondary;
+  background: $bkg-primary;
 
   &:hover {
     background: $clr-secondary;
