@@ -114,4 +114,8 @@ ul.reset li {
   color: #ffffff;
 }
 
+footer ul.list-group.list-group-horizontal-sm > li {
+  padding-top: 0 !important;
+}
+
 /*# sourceMappingURL=index.css.map */

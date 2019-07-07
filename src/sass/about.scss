@@ -1,7 +1,7 @@
 @import "variables";
 .badge-primary {
   margin: 5px;
-  background: $bkg-contrast;
+  background: $bkg-highlight;
   color: $clr-tertiary;
   font-size: 0.8em;
   //padding: 3px;
@@ -9,7 +9,7 @@
 
 .experience {
   .progress-bar {
-    background: $bkg-contrast;
+    background: $bkg-highlight;
   }
 }
 
@@ -24,9 +24,9 @@ h2 i.fas {
   h4 {
     font-size: 1rem;
   }
+}
 
-  &.card-education {
-  }
-  &.card-job {
-  }
+h3.card-instituition {
+  color: $clr-secondary;
+  font-size: 1.5em;
 }

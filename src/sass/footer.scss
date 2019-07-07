@@ -1,0 +1,12 @@
+@import "variables";
+
+footer p {
+  color: $clr-secondary;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  footer p {
+    text-align: left !important;
+  }
+}

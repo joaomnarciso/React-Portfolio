@@ -29,7 +29,6 @@ export default ({ data }) => {
                   aria-valuemin="0"
                   aria-valuemax="100"
                 />
-                {item.percentage}
               </div>
             </div>
           );

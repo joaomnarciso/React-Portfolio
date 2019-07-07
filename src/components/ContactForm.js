@@ -32,8 +32,8 @@ export default class ContactForm extends Component {
 
     if (!data.name) errors.name = "You must enter your name";
     if (!data.email) errors.email = "You must enter your email";
-    if (!data.subject) errors.subject = "You must enter your subject";
-    if (!data.message) errors.message = "You must enter your message";
+    if (!data.subject) errors.subject = "You must enter a subject";
+    if (!data.message) errors.message = "You must enter a message";
 
     return errors;
   };
@@ -42,13 +42,14 @@ export default class ContactForm extends Component {
     const { name, email, subject, message, errors } = this.state;
 
     return (
-      <div className="container">
+      <div className="container contact">
         <div className="row">
-          <div className="col-md-6 mx-auto">
+          <div className="col-lg-12 mx-auto px-0">
             <form
               onSubmit={this.onSubmit}
-              className="text-left bg-light p-5 shadow-lg"
+              className="text-left bg-light pb-5 px-5 shadow-lg"
             >
+              <h2 className="py-2">Contact form</h2>
               <div className="form-group">
                 <label htmlFor="name">Full name</label>
                 <input
@@ -106,7 +107,9 @@ export default class ContactForm extends Component {
                   </div>
                 )}
               </div>
-              <button className="btn btn-primary">Submit</button>
+              <button className="btn btn-outline-info btn-custom">
+                Submit
+              </button>
             </form>
           </div>
         </div>

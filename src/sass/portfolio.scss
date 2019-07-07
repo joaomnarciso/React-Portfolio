@@ -36,3 +36,69 @@
     transform: scale(1);
   }
 }
+.row.d-flex {
+  height: 100vw;
+  max-height: calc(100vh * 3);
+}
+
+.pb-3 {
+  flex: initial;
+  display: block;
+}
+.card-columns {
+  column-gap: 2em;
+
+  .card {
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+}
+.project {
+  overflow: hidden;
+  display: block;
+
+  & figcaption h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.1s;
+    font-size: 1.5em;
+  }
+  &:hover figcaption h2 {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+  & figcaption p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 0.1s;
+    height: auto;
+    padding-bottom: 0px !important;
+  }
+  &:hover figcaption p {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card-columns {
+    column-count: 3;
+  }
+}

@@ -23,9 +23,13 @@ export default ({ data }) => (
           </li>
         </ul>
 
-        <button type="button" className="btn btn-outline-info btn-custom">
+        <a
+          href="data/cv.pdf"
+          className="btn btn-outline-info btn-custom"
+          target="_blank"
+        >
           Download my resume
-        </button>
+        </a>
       </div>
       <div className="col-sm text-right">
         <img

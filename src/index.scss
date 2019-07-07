@@ -117,3 +117,9 @@ ul.reset li {
     }
   }
 }
+
+footer {
+  ul.list-group.list-group-horizontal-sm > li {
+    padding-top: 0 !important;
+  }
+}

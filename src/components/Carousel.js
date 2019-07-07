@@ -34,12 +34,13 @@ export default ({ data }) => (
               <rect width="100%" height="100%" fill="#ffbd39" />
             </svg>
             <div className="p-5 position-absolute fixed-top w-100 h-100 d-flex justify-content-center align-items-center">
-              <p>
+              <p className="text-left">
                 {item.message}
+                <br />
                 <span>
-                  <b>{item.author}</b>
+                  <b>{item.author}</b>,
                 </span>
-                <span>{item.company}</span>
+                <span> {item.company}</span>
               </p>
             </div>
           </div>

@@ -1,0 +1,20 @@
+.map {
+  width: 100%;
+}
+.map iframe {
+  width: 100%;
+}
+
+.card-business {
+  background: #33c69f;
+}
+.card-business h2,
+.card-business li {
+  color: #0a1b28;
+}
+
+.contact h2 {
+  color: #0a1b28;
+}
+
+/*# sourceMappingURL=contact.css.map */

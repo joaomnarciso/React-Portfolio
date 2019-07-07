@@ -47,17 +47,27 @@ export default class Home extends Component {
         <Carousel data={this.state.testimonials} />
         <div className="container my-4">
           <div className="row">
-            <div className="col-md">
+            <div className="col-md-6">
               <div className="content-frame border-default hover">
-                <i className="fas fa-code" />
-                <h4>Nam in ante ipsum</h4>
-                <h2>Nullam scelerisque diam vitae lacinia ullamcorper. </h2>
+                <h4>Development skills</h4>
+                <p className="text-left">
+                  I have 12 years commercial experience providing frontend and
+                  backend development, producing high quality responsive
+                  websites and applications with exceptional reliablity,
+                  performance and user experience.
+                </p>
               </div>
             </div>
-            <div className="col-md">
+            <div className="col-md-6">
               <div className="content-frame border-default hover">
-                <h4>Nam in ante ipsum</h4>
-                <h2>Nullam scelerisque diam vitae lacinia ullamcorper. </h2>
+                <h4>Soft skills</h4>
+                <p className="text-left">
+                  In my experience as a freelancer and working for agencies I
+                  have also obtained an eye for detail and appreciation for
+                  design, knowledge of integrating with and developing
+                  server-side, as well as knowing how to efficiently project
+                  manage and work with clients and colleagues successfully.
+                </p>
               </div>
             </div>
           </div>

@@ -1,12 +1,12 @@
 .badge-primary {
   margin: 5px;
-  background: #ffbd39;
+  background: #33c69f;
   color: #0a1b28;
   font-size: 0.8em;
 }
 
 .experience .progress-bar {
-  background: #ffbd39;
+  background: #33c69f;
 }
 
 /* Education */
@@ -20,6 +20,11 @@ h2 i.fas {
 }
 .card h4 {
   font-size: 1rem;
+}
+
+h3.card-instituition {
+  color: #33c69f;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=about.css.map */

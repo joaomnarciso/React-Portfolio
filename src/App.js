@@ -1,22 +1,19 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/Header";
-import { BrowserRouter, Route } from "react-router-dom";
-import Home from "./containers/Home";
-import Contact from "./containers/Contact";
-import About from "./containers/About";
-import Portfolio from "./containers/Portfolio";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Home, About, Contact, Portfolio } from "./containers";
 
 export default () => (
-  <BrowserRouter>
+  <Router>
     <div className="App">
-      <Header logo="Joao N." />
-      <Route exact path="/" component={Home} />
+      <Header logo="João M. Narciso" />
+      <Route exact path="/" render={() => <Home title="Hello" />} />
       <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
       <Route path="/portfolio" component={Portfolio} />
       <Footer />
     </div>
-  </BrowserRouter>
+  </Router>
 );

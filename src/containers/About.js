@@ -101,7 +101,6 @@ export default class About extends Component {
         </section>
 
         <div className="container">
-          <h1>About</h1>
           <div className="row">
             <div className="col-md-6">
               <Technologies data={this.state.technologies} />

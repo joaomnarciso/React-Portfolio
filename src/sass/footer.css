@@ -1,0 +1,12 @@
+footer p {
+  color: #33c69f;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  footer p {
+    text-align: left !important;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
