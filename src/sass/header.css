@@ -1,0 +1,12 @@
+.navbar-collapse a {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.navbar-collapse a:hover, .navbar-collapse a.active {
+  color: #33c69f !important;
+}
+
+.navbar-brand {
+  color: #33c69f !important;
+}
+
+/*# sourceMappingURL=header.css.map */

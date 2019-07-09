@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 
+import "../sass/header.css";
+
 const Header = ({ logo }) => (
   <nav className="navbar navbar-expand-xl navbar-dark bg-dark shadow">
     <Link className="navbar-brand" to="/">

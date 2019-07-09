@@ -1,0 +1,16 @@
+@import "variables";
+
+.navbar-collapse {
+  a {
+    color: $href-primary !important;
+
+    &:hover,
+    &.active {
+      color: $clr-secondary !important;
+    }
+  }
+}
+
+.navbar-brand {
+  color: $clr-secondary !important;
+}
