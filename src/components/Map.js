@@ -8,6 +8,7 @@ export default () => (
       frameborder="0"
       style={{ border: 0 }}
       allowfullscreen
+      title="map"
     />
   </section>
 );

@@ -9,7 +9,6 @@ export default ({ data }) => {
           let percentage = 0;
 
           const interval = setInterval(() => {
-            console.log("%", percentage);
             percentage = percentage + 10;
           }, 100);
 

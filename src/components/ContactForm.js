@@ -10,7 +10,6 @@ export default class ContactForm extends Component {
   };
 
   onChange = event => {
-    console.log("event", event.target.name);
     this.setState({ [event.target.name]: event.target.value });
   };
 
@@ -21,7 +20,6 @@ export default class ContactForm extends Component {
 
     if (Object.keys(errors).length > 0) {
       this.setState({ errors });
-      console.error("Errors", errors);
     } else {
       console.log("data", this.state);
     }

@@ -17,8 +17,6 @@ export default class Contact extends Component {
       let res = await fetch("/data/database.json");
       const { basics } = await res.json();
 
-      console.log("personal", basics);
-
       this.setState({ personal: basics });
     } catch (err) {
       console.error("Something went wrong:", err);
